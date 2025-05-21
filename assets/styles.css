@@ -34,19 +34,7 @@
     font-size: 1.1rem;
 }
 
-/* Button styling */
-.stButton button {
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 8px;
-    border: none;
-    padding: 10px 15px;
-    font-weight: 500;
-    width: 100%;
-    margin: 8px 0;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+
 
 .stButton button:hover {
     background-color: #45a049;
