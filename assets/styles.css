@@ -1,173 +1,73 @@
 /* Main container styling */
 .stApp {
-    background-color: #f8f9fa;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
 }
 
 /* Sidebar styling */
-[data-testid="stSidebar"] {
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+.css-1l02zno {
+    background-color: #2c3e50;
     color: white;
 }
 
-.sidebar .sidebar-content {
-    background-color: transparent;
-    padding: 20px;
-}
-
-.sidebar-title {
+/* Sidebar header */
+.css-1l02zno h1, .css-1l02zno h2, .css-1l02zno h3 {
     color: white !important;
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 1.5rem;
 }
 
-.sidebar-section {
-    margin-bottom: 30px;
+/* Button styling */
+.stButton button {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
 }
-
-.sidebar-section-title {
-    color: #ffffff;
-    font-weight: 600;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-
 
 .stButton button:hover {
-    background-color: #45a049;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    background-color: #2980b9;
+    color: white;
 }
 
 /* Input fields */
 .stTextInput input, .stSelectbox select, .stDateInput input {
-    border-radius: 8px;
-    border: 1px solid #ced4da;
-    padding: 10px;
-    font-size: 14px;
-    transition: all 0.3s;
+    border-radius: 5px;
+    border: 1px solid #dfe6e9;
+    padding: 0.5rem;
 }
 
-.stTextInput input:focus, .stSelectbox select:focus, .stDateInput input:focus {
-    border-color: #1e3c72;
-    box-shadow: 0 0 0 0.2rem rgba(30, 60, 114, 0.25);
+/* Dataframe styling */
+.stDataFrame {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Radio buttons */
-.stRadio div {
-    color: white;
-    background-color: rgba(255,255,255,0.1);
-    padding: 12px;
-    border-radius: 8px;
-    margin-top: 5px;
-}
-
-.stRadio div label {
-    color: white !important;
-    font-weight: 500;
-    margin-right: 15px;
-}
-
-.stRadio div[role="radiogroup"] {
-    background-color: transparent;
-}
-
-/* Main content area */
-.main .block-container {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    margin: 20px;
-}
-
-/* Tabs */
+/* Tab styling */
 .stTabs [role="tablist"] {
-    background-color: #e9ecef;
-    border-radius: 10px;
-    padding: 8px;
-    margin-bottom: 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
 }
 
 .stTabs [aria-selected="true"] {
-    background-color: #1e3c72 !important;
+    background-color: #3498db;
     color: white !important;
-    border-radius: 8px;
-    font-weight: 600;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
 
-.stTabs [aria-selected="false"] {
-    color: #495057;
-    transition: all 0.3s;
-}
-
-.stTabs [aria-selected="false"]:hover {
-    color: #1e3c72;
-    background-color: rgba(30, 60, 114, 0.1);
-}
-
-/* Metrics */
+/* Metric cards */
 .stMetric {
     background-color: white;
     border-radius: 10px;
-    padding: 1.2rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    border-left: 5px solid #1e3c72;
-    transition: all 0.3s;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.stMetric:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-}
-
-/* Expanders */
+/* Expander styling */
 .stExpander {
     background-color: white;
     border-radius: 10px;
     padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    margin-bottom: 1.5rem;
-    border: 1px solid #e9ecef;
-}
-
-.stExpander:hover {
-    border-color: #1e3c72;
-}
-
-/* Dataframe */
-.stDataFrame {
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    border: 1px solid #e9ecef;
-}
-
-/* Headers */
-h1, h2, h3, h4, h5, h6 {
-    color: #1e3c72;
-    font-weight: 600;
-}
-
-h1 {
-    border-bottom: 2px solid #1e3c72;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-/* Links */
-a {
-    color: #1e3c72;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-a:hover {
-    color: #2a5298;
-    text-decoration: underline;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* Responsive adjustments */
@@ -178,15 +78,5 @@ a:hover {
     
     .stButton button {
         width: 100%;
-        margin: 5px 0;
-    }
-    
-    .main .block-container {
-        padding: 1rem;
-        margin: 10px;
-    }
-    
-    h1 {
-        font-size: 1.8rem;
     }
 }
