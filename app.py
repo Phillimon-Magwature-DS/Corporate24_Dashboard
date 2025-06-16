@@ -19,14 +19,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Load custom CSS
-'''
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-local_css("assets/styles.css")
-'''
 
 # Load company logo with circular mask
 def load_logo():
